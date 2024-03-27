@@ -18,7 +18,7 @@ function Register(props) {
             if (response.data.success) {
                 // Assuming you have a method to handle successful register
                 // For example, saving the register state and redirecting to another page
-                console.log('register successful', response.data);
+                console.log('Register successful', response.data);
                 // Redirect or update state here
                 // props.history.push('/'); // Redirect to home page or dashboard
             } else {
@@ -26,7 +26,7 @@ function Register(props) {
                 setErrorMessage('Failed to register. Please check your username and password.');
             }
         } catch (error) {
-            console.error('register error:', error);
+            console.error('Register error:', error);
             setErrorMessage('An error occurred during register.');
         }
     };
